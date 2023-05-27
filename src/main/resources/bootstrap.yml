@@ -1,0 +1,7 @@
+# Spring еще до загрузки всех свойств прочитает этот файл
+spring:
+  application:
+    name: gateway-server
+  cloud:
+    config:
+      uri: http://localhost:8071
