@@ -2,6 +2,18 @@
 spring:
   application:
     name: gateway-server
+  profiles:
+    active: default
   cloud:
     config:
+      name: gateway-server
       uri: http://localhost:8071
+# Позволяет вывести в консоль логи добавления заголовка в запрос к службе
+logging:
+  level:
+    com:
+      netflix: WARN
+      optimagrowth: DEBUG
+    org:
+      springframework:
+        web: WARN
